@@ -62,7 +62,7 @@ function package_download() {
   curl $package -s -o - | tar -zxf  - -C $location --strip 1
 }
 
-echo "-----> Resolving engine versions"
+echo "-----> Resolving engine versions HEHE"
 
 #TODO: Fix package.json loading
 #if [ -f "${BUILD_DIR}/package.json" ]; then
