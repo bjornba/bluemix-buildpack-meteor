@@ -12,6 +12,7 @@ unset GIT_DIR
 
 # parse and derive params
 BUILD_DIR=$1
+BUILD_DIR="$BUILD_DIR/QM"
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 
@@ -101,7 +102,6 @@ export npm_config_prefix="$VENDORED_MODULES"
 export CPATH="$INCLUDE_PATH"
 export CPPPATH="$INCLUDE_PATH"
 
-BUILD_DIR="$BUILD_DIR/QM"
 METEOR_BUILD_DIR="$BUILD_DIR/.meteor/meteor_build"
 echo $BUILD_DIR
 echo $METEOR_BUILD_DIR
