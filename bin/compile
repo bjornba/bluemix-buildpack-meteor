@@ -105,6 +105,8 @@ export CPPPATH="$INCLUDE_PATH"
 METEOR_BUILD_DIR="$BUILD_DIR/QM/.meteor/meteor_build"
 echo $BUILD_DIR
 echo $METEOR_BUILD_DIR
+ls
+ls /tmp/staged/app
 mkdir -p "$HOME"
 ############################################
 # install meteor + packages
