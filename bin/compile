@@ -106,7 +106,7 @@ echo $BUILD_DIR
 echo $METEOR_BUILD_DIR
 pwd
 mv app/QM/* app
-ls
+ls app
 # ls /tmp/staged/app
 mkdir -p "$HOME"
 ############################################
