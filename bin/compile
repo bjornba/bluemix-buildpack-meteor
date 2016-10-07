@@ -101,7 +101,7 @@ export npm_config_prefix="$VENDORED_MODULES"
 export CPATH="$INCLUDE_PATH"
 export CPPPATH="$INCLUDE_PATH"
 
-BUILD_DIR = "$BUILD_DIR/QM"
+BUILD_DIR="$BUILD_DIR/QM"
 METEOR_BUILD_DIR="$BUILD_DIR/.meteor/meteor_build"
 echo $BUILD_DIR
 echo $METEOR_BUILD_DIR
