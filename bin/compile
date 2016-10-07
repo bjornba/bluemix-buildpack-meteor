@@ -102,7 +102,7 @@ export CPATH="$INCLUDE_PATH"
 export CPPPATH="$INCLUDE_PATH"
 
 
-METEOR_BUILD_DIR="$BUILD_DIR/.meteor/meteor_build"
+METEOR_BUILD_DIR="$BUILD_DIR/QM/.meteor/meteor_build"
 mkdir -p "$HOME"
 ############################################
 # install meteor + packages
