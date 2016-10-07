@@ -12,7 +12,6 @@ unset GIT_DIR
 
 # parse and derive params
 BUILD_DIR=$1
-BUILD_DIR="$BUILD_DIR/QM"
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 
@@ -105,6 +104,7 @@ export CPPPATH="$INCLUDE_PATH"
 METEOR_BUILD_DIR="$BUILD_DIR/.meteor/meteor_build"
 echo $BUILD_DIR
 echo $METEOR_BUILD_DIR
+mv /tmp/staged/app/QM/* /tmp/staged/app
 ls
 # ls /tmp/staged/app
 mkdir -p "$HOME"
