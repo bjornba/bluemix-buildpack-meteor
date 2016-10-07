@@ -104,7 +104,7 @@ export CPPPATH="$INCLUDE_PATH"
 METEOR_BUILD_DIR="$BUILD_DIR/.meteor/meteor_build"
 echo $BUILD_DIR
 echo $METEOR_BUILD_DIR
-mv /tmp/staged/app/QM/* /tmp/staged/app
+mv tmp/staged/app/QM/* tmp/staged/app
 ls
 # ls /tmp/staged/app
 mkdir -p "$HOME"
