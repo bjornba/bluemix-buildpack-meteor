@@ -107,9 +107,10 @@ echo $BUILD_DIR
 echo $METEOR_BUILD_DIR
 pwd
 shopt -s dotglob
-mv app/Accounts/organizations app/QM/client
+#mv app/Accounts/organizations app/QM/client
 # mv app/NonConformity ..
 # mv app/QM/* app
+ln -s app/Accounts/organizations app/QM/client/organizations
 ls -a app
 # ls /tmp/staged/app
 mkdir -p "$HOME"
