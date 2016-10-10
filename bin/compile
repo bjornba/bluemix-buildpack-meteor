@@ -110,7 +110,7 @@ shopt -s dotglob
 #mv app/Accounts/organizations app/QM/client
 # mv app/NonConformity ..
 # mv app/QM/* app
-ln -s app/Accounts/organizations app/QM/client/organizations
+ln -s ../../Accounts/organizations app/QM/client/organizations
 ls -a app
 ls -a app/QM/client
 # ls /tmp/staged/app
