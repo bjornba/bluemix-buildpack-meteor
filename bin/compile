@@ -11,7 +11,7 @@ set -e
 unset GIT_DIR
 
 # parse and derive params
-BUILD_DIR=$1
+BUILD_DIR="$1/QM"
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 
@@ -106,9 +106,9 @@ echo $BUILD_DIR
 echo $METEOR_BUILD_DIR
 pwd
 shopt -s dotglob
-mv app/Accounts ..
-mv app/NonConformity ..
-mv app/QM/* app
+# mv app/Accounts ..
+# mv app/NonConformity ..
+# mv app/QM/* app
 ls -a app
 # ls /tmp/staged/app
 mkdir -p "$HOME"
