@@ -12,6 +12,7 @@ unset GIT_DIR
 
 # parse and derive params
 BUILD_DIR="$1/QM"
+BUILD_DIR2=$1
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 
@@ -144,11 +145,11 @@ echo "Setting up MONGO_URL in .profile.d"
 echo 'Looking for a service labelled "mongolab" in the following $VCAP_SERVICES...'
 echo $VCAP_SERVICES
 
-mkdir -p "$BUILD_DIR"/.profile.d
-cat | tee "$BUILD_DIR"/.profile.d/mongo.sh <<EOF
+mkdir -p "$BUILD_DIR2"/.profile.d
+cat | tee "$BUILD_DIR2"/.profile.d/mongo.sh <<EOF
   #!/bin/sh
 
-  export ROOT_URL=\${ROOT_URL:-`ruby -e 'require "json"; puts "https://#{JSON.parse(ENV["VCAP_APPLICATION"])["application_uris"][0]}/QM"'`}
+  export ROOT_URL=\${ROOT_URL:-`ruby -e 'require "json"; puts "https://#{JSON.parse(ENV["VCAP_APPLICATION"])["application_uris"][0]}"'`}
   export
 EOF
 
