@@ -110,6 +110,8 @@ shopt -s dotglob
 #mv app/Accounts/organizations app/QM/client
 # mv app/NonConformity ..
 # mv app/QM/* app
+rm -rf app/Nonconformity
+rm -rf app/Audits
 app/add_symlinks.sh
 # ln -s ../../Accounts/organizations app/QM/client/organizations
 ls -a app
@@ -161,3 +163,4 @@ PATH="$METEOR_BUILD_DIR/bin:$PATH"
 echo "-----> Vendoring node into slug"
 mkdir -p "$METEOR_BUILD_DIR/bin"
 cp "$VENDORED_NODE/bin/node" "$METEOR_BUILD_DIR/bin/node"
+rm -rf /app/shared
