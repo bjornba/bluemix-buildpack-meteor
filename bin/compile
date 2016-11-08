@@ -163,4 +163,4 @@ PATH="$METEOR_BUILD_DIR/bin:$PATH"
 echo "-----> Vendoring node into slug"
 mkdir -p "$METEOR_BUILD_DIR/bin"
 cp "$VENDORED_NODE/bin/node" "$METEOR_BUILD_DIR/bin/node"
-rm -rf /app/shared
+rm -rf /tmp/staged/app/shared
