@@ -110,7 +110,7 @@ shopt -s dotglob
 #mv app/Accounts/organizations app/QM/client
 # mv app/NonConformity ..
 # mv app/QM/* app
-rm -rf app/Nonconformity
+rm -rf app/Nonconfirmity
 rm -rf app/Audits
 app/add_symlinks.sh
 # ln -s ../../Accounts/organizations app/QM/client/organizations
@@ -164,3 +164,15 @@ echo "-----> Vendoring node into slug"
 mkdir -p "$METEOR_BUILD_DIR/bin"
 cp "$VENDORED_NODE/bin/node" "$METEOR_BUILD_DIR/bin/node"
 rm -rf /tmp/staged/app/shared
+rm -rf /tmp/staged/app/QM/.meteor/local
+rm -rf /tmp/staged/app/QM/.node-gyp
+rm -rf /tmp/staged/app/QM/.npm
+rm -rf /tmp/staged/app/QM/.vscode
+rm -rf /tmp/staged/app/QM/client
+rm -rf /tmp/staged/app/QM/config
+rm -rf /tmp/staged/app/QM/model
+rm -rf /tmp/staged/app/QM/server
+rm -rf /tmp/staged/app/QM/shared_components
+rm -rf /tmp/staged/app/QM/test
+
+
