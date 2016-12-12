@@ -116,6 +116,7 @@ shopt -s dotglob
 app/add_symlinks.sh
 # ln -s ../../Accounts/organizations app/QM/client/organizations
 ls -a app
+ls -a app/$CCQ_APP
 ls -a app/$CCQ_APP/client
 # ls /tmp/staged/app
 mkdir -p "$HOME"
