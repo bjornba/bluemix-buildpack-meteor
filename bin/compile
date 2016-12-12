@@ -7,14 +7,12 @@ set -e
 # debug
 # set -x
 
-printenv
-echo $test
-echo $test2
+echo $CCQ_APP
 # clean up leaking environment
 unset GIT_DIR
 
 # parse and derive params
-BUILD_DIR="$1/QM"
+BUILD_DIR="$1/$CCQ_APP"
 BUILD_DIR2=$1
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
@@ -113,12 +111,12 @@ shopt -s dotglob
 #mv app/Accounts/organizations app/QM/client
 # mv app/NonConformity ..
 # mv app/QM/* app
-rm -rf app/Nonconfirmity
-rm -rf app/Audits
+# rm -rf app/Nonconfirmity
+# rm -rf app/Audits
 app/add_symlinks.sh
 # ln -s ../../Accounts/organizations app/QM/client/organizations
 ls -a app
-ls -a app/QM/client
+ls -a app/$CCQ_APP/client
 # ls /tmp/staged/app
 mkdir -p "$HOME"
 ############################################
