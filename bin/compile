@@ -113,7 +113,8 @@ shopt -s dotglob
 # mv app/QM/* app
 # rm -rf app/Nonconfirmity
 # rm -rf app/Audits
-app/add_symlinks.sh
+# app/add_symlinks.sh
+/tmp/app/add_symlinks.sh
 # ln -s ../../Accounts/organizations app/QM/client/organizations
 ls -a app
 ls -a app/$CCQ_APP
